@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="содержимое мета-тега">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper container">
+			<a class="header__logo" href="#">
+				<svg width="128" height="70">
+					<use xlink:href="img/sprite.svg#icon-logo"></use>
+				</svg>
+			</a>
+
+			<ul class="header__list">
+				<li class="header__item"><a class="header__link" href="#">Sign In</a></li>
+				<li class="header__item header__item--current"><a class="header__link" href="#">Sign Up</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<!-- promo -->
+			<section class="promo">
+				<div class="promo__wrapper container">
+					<div class="promo__data">
+						<h1 class="promo__title">Price tracker extention for shopping</h1>
+						<p class="promo__text">DivPrice monitors price changes for products on shop, monitors coupons and applay it.</p>
+						<a class="promo__install button" href="#">
+							<svg width="30" height="30">
+								<use xlink:href="img/sprite.svg#icon-chrome"></use>
+							</svg>
+							Install for FREE
+						</a>
+						<p class="promo__policy">By installing the DivPrice extension, you accept the terms of the <a class="promo__link" href="#">"User Agreement"</a> and allow you to be redirected to affiliate programs links.</p>
+					</div>
+
+					<ul class="promo__list">
+						<li class="promo__item">
+							<h2 class="promo__item-title">99.99 $</h2>
+							<picture class="promo__picture">
+								<!-- 1x: w: 125px, h: 149px; 2x w: 250px, h: 298px  -->
+								<img class="promo__image" src="img/watch.png" srcset="img/watch.webp 1x, img/watch@2x.webp 2x" width="125" height="149" alt="Часы">
+							</picture>
+							<p class="promo__status">dropped</p>
+							<a class="promo__coupons" href="#">+ 8 coupons</a>
+							<a class="promo__buy" href="#">Buy</a>
+							<form class="promo__form" action="" method="post">
+								<input class="visually-hidden promo__field" type="checkbox" name="watch-field" id="watch-field" checked="">
+								<label class="promo__sign" for="watch-field">Notify me if price drops</label>
+							</form>
+						</li>
+						<li class="promo__item">
+							<h2 class="promo__item-title">79.99 $</h2>
+							<picture class="promo__picture">
+								<!-- 1x: w: 138px, h: 160px; 2x w: 276px, h: 320px  -->
+								<img class="promo__image" src="img/headphones.png" srcset="img/headphones.webp 1x, img/headphones@2x.webp 2x" width="138" height="160" alt="Наушники">
+							</picture>
+							<p class="promo__status">dropped</p>
+							<a class="promo__coupons" href="#">+ 4 coupons</a>
+							<a class="promo__buy" href="#">Buy</a>
+							<form class="promo__form" action="" method="post">
+								<input class="visually-hidden promo__field" type="checkbox" name="headphones-field" id="headphones-field" checked="">
+								<label class="promo__sign" for="headphones-field">Notify me if price drops</label>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		<section class="advantages">
+			<div class="advantages__wrapper container">
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<h3 class="advantages__title advantages__title--history">Price history</h3>
+						<p class="advantages__text">Get the products you want cheaper using the price history chart</p>
+					</li>
+
+					<li class="advantages__item">
+						<h3 class="advantages__title advantages__title--notification">Notification</h3>
+						<p class="advantages__text">Get the products you want for less using price change notifications</p>
+					</li>
+
+					<li class="advantages__item">
+						<h3 class="advantages__title advantages__title--favorite">Favorite</h3>
+						<p class="advantages__text">Add your favorite products to your wishlist to quickly access price charts</p>
+					</li>
+
+					<li class="advantages__item">
+						<h3 class="advantages__title advantages__title--coupons">Coupons</h3>
+						<p class="advantages__text">Get promo codes and coupons applicable on the shopping platform you visit</p>
+					</li>
+				</ul>
+
+				<div class="advantages__visual">
+					<ul class="advantages__list advantages__list--vertical">
+					  <li class="advantages__item">
+						  <h3 class="advantages__title advantages__title--history">Price history</h3>
+						  <p class="advantages__text">Get the products you want cheaper using the price history chart</p>
+					  </li>
+
+					  <li class="advantages__item">
+						  <h3 class="advantages__title advantages__title--notification">Notification</h3>
+						  <p class="advantages__text">Get the products you want for less using price change notifications</p>
+					  </li>
+
+					  <li class="advantages__item">
+					  	<h3 class="advantages__title advantages__title--favorite">Favorite</h3>
+					  	<p class="advantages__text">Add your favorite products to your wishlist to quickly access price charts</p>
+					  </li>
+				  </ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="coupons">
+			<div class="coupons__wrapper container">
+				<div class="coupons__content">
+					<h2 class="coupons__title">Coupons</h2>
+					<ul class="coupons__list">
+						<li class="coupons__item">
+							<p class="coupons__text coupons__text--head">Get promo codes and coupons applicable on the shopping platform you visit</p>
+							<p class="coupons__text">DivPrice stores a product's price history and tracks changes to its price on a day-to-day basis. This is a very useful function if you want to take advantage of sales and special offers. You can use it to tell real discounts from "fake" ones.</p>
+						</li>
+
+						<li class="coupons__item">
+							<p class="coupons__text coupons__text--head">Get promo codes and coupons applicable on the shopping platform you visit</p>
+							<p class="coupons__text">DivPrice stores a product's price history and tracks changes to its price on a day-to-day basis. This is a very useful function if you want to take advantage of sales and special offers. You can use it to tell real discounts from "fake" ones.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="action">
+			<div class="action__wrapper container">
+				<h2 class="action__title">How it Works</h2>
+				<ul class="action__list">
+					<li class="action__item">
+						<picture class="action__picture">
+							<!-- 1x: w: 107px, h: 112px; 2x w: 214px, h: 224px  -->
+							<img class="action__image" src="img/extension.png" srcset="img/extension.webp 1x, img/extension@2x.webp 2x" width="100" height="100" alt="extention description">
+						</picture>
+						<h3 class="action__item-title">Install the browser extension</h3>
+						<p class="action__item-text">It just takes a few clicks!</p>
+					</li>
+
+					<li class="action__item">
+						<picture class="action__picture">
+							<!-- 1x: w: 100px, h: 112px; 2x w: 200px, h: 224px  -->
+							<img class="action__image" src="img/product.png" srcset="img/product.webp 1x, img/product@2x.webp 2x" width="100" height="100" alt="product description">
+						</picture>
+						<h3 class="action__item-title">Go to product page</h3>
+						<p class="action__item-text">Go to shop, and find the products that you like most.</p>
+					</li>
+
+					<li class="action__item">
+						<picture class="action__picture">
+							<!-- 1x: w: 100px, h: 112px; 2x w: 200px, h: 224px  -->
+							<img class="action__image" src="img/coupon.png" srcset="img/coupon.webp 1x, img/coupon@2x.webp 2x" width="100" height="100" alt="coupon description">
+						</picture>
+						<h3 class="action__item-title">Check the price, apply coupon</h3>
+						<p class="action__item-text">Compare prices for products, choose a seller, watch real reviews, and make your purchase.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrapper container">
+			<h2 class="footer__title">DivPrice browser extensions:</h2>
+			<a class="footer__install button" href="#">
+				<svg width="30" height="30">
+					<use xlink:href="img/sprite.svg#icon-chrome"></use>
+				</svg>
+				Install for FREE
+			</a>
+		</div>
+	</footer>
+	
+	<!-- <script src="js/main.js"></script> -->
+</body>
+</html>
