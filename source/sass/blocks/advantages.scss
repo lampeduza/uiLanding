@@ -1,0 +1,111 @@
+.advantages__wrapper {
+	background-image: url('../img/visual.png');
+	background-position: 100% 301px;
+	background-repeat: no-repeat;
+	background-size: 662px 830px;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+   background-image: url('../img/visual@2x.webp');
+  }
+}
+
+.advantages__list {
+	@include reset-list;
+	display: flex;
+
+	&--vertical {
+		flex-direction: column;
+		width: 475px;
+
+		.advantages__item {
+			margin-right: 0;
+			margin-bottom: 75px;
+			padding: 0 0 25px 0;
+			width: auto;
+			height: auto;
+			text-align: left;
+			border: none;
+			background: none;
+
+			&:hover {
+    		background: none;
+    		cursor: auto;
+  		}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.advantages__title {
+			margin: 0;
+			margin-bottom: 30px;
+		}
+
+		.advantages__text {
+			margin: 0;
+		}
+	}
+}
+
+.advantages__item {
+	@include item;
+	text-align: center;
+}
+
+.advantages__title {
+	margin: 0 auto;
+	margin-bottom: 35px;
+	padding-left: 34px;
+	width: max-content;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #70f0b4;
+	position: relative;
+
+	&::before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background-repeat: no-repeat;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+
+	&--history {
+		&::before {
+			background-image: url('../img/icons/icon-time.svg');
+		}
+	}
+
+	&--notification {
+		&::before {
+			background-image: url('../img/icons/icon-notification.svg');
+		}
+	}
+
+	&--favorite {
+		&::before {
+			background-image: url('../img/icons/icon-favorite.svg');
+		}
+	}
+
+	&--coupons {
+		&::before {
+			background-image: url('../img/icons/icon-ticket.svg');
+		}
+	}
+}
+
+.advantages__text {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.advantages__visual {
+	padding-top: 185px;
+	padding-bottom: 314px;
+}

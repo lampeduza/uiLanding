@@ -1,0 +1,100 @@
+.coupons {
+	.container {
+		padding: 0 195px;
+	}
+}
+
+.coupons__wrapper {
+	display: flex;
+	justify-content: flex-end;
+
+	background-image: url('../img/coupons-background.png');
+	background-position: 0 0;
+	background-size: 662px 830px;
+	background-repeat: no-repeat;
+
+	background-image: url('../img/coupons-background@2x.webp');
+}
+
+.coupons__content {
+	width: 499px;
+	padding-top: 91px;
+	padding-bottom: 293px;
+}
+
+.coupons__title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #70f0b4;
+	padding-left: 34px;
+	margin: 0;
+	margin-bottom: 15px;
+	margin-left: 54px;
+	position: relative;
+
+	&::before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		background-image: url('../img/icons/icon-ticket.svg');
+		background-size: 24px 24px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+}
+
+.coupons__list {
+	@include reset-list;
+
+	// list-style-type: none;
+  counter-reset: li;
+}
+
+.coupons__item {
+	padding: 60px 0 0 40px;
+	margin-bottom: 35px;
+	position: relative;
+
+	&:hover {
+		cursor: pointer;
+		
+		&::before {
+			color: rgba(112, 240, 180, 0.10);
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+
+		&::before {
+			left: -15px;
+		}
+	}
+
+	&::before {
+		font-family: 'Sora';
+		font-size: 150px;
+		line-height: 189px;
+		color: rgba(112, 240, 180, 0.25);
+		counter-increment: li;
+		content: counter(li);
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+}
+
+.coupons__text {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+
+	&--head {
+		font-size: 16px;
+		line-height: 19px;
+		margin-bottom: 25px;
+	}
+}
